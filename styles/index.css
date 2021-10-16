@@ -19,27 +19,27 @@ body{
 
 .header {
     background-color: rgb(231, 231, 153);
-    position: absolute;
     display: flex;
     flex-direction: row;
-    height: 65%;
+    max-height: 55%;
     width: 100%;
-    padding-top: 7.5%;
-    padding-bottom: 7.5%;
+    padding-top: 5%;
+    padding-bottom: 5%;
     padding-left: 5%;
     padding-right: 5%;
 }
 
 .mainImg {
     max-height: 100%;
-    height: 45vw;
+    height: 30vw;
     align-self:flex-start;
 }
 
 .header-content {
-    margin-left: 50px;
+    margin-left: 75px;
     display: flex;
     flex-direction: column;
+    margin-top: 80px;
 }
 
 .header-content h1 {
@@ -63,8 +63,11 @@ body{
         height: 40%;
     }
     .header-content {
+        margin-top: 0px;
         justify-content: center;
         margin-left: 0px;
+        padding-top: 25px;
+        padding-bottom: 25px;
     }
 
     .header-content h1 {
@@ -85,6 +88,10 @@ body{
     animation: blink 1.2s infinite;
 }
 
+.iam {
+    font-weight: bold;
+}
+
 .typed {
     margin-right: 0.2em;
 }
@@ -95,4 +102,9 @@ body{
     50% {background-color: transparent;}
     99.9% {background-color: transparent;}
     100% {background-color: black;}
+}
+
+.aboutme {
+    height: 500px;
+    width: 100%;
 }
