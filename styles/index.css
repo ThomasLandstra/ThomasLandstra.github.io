@@ -1,0 +1,98 @@
+body{
+    font-family: tahoma;
+    text-align: justify;
+    overflow-x: hidden;
+}
+
+.navbar-text a {
+    text-decoration: none;
+    padding-right: 7px;
+}
+
+.bi {
+    transition: fill .1s;
+}
+
+.bi:hover {
+    fill: rgb(109, 109, 109);
+}
+
+.header {
+    background-color: rgb(231, 231, 153);
+    position: absolute;
+    display: flex;
+    flex-direction: row;
+    height: 65%;
+    width: 100%;
+    padding-top: 7.5%;
+    padding-bottom: 7.5%;
+    padding-left: 5%;
+    padding-right: 5%;
+}
+
+.mainImg {
+    max-height: 100%;
+    height: 45vw;
+    align-self:flex-start;
+}
+
+.header-content {
+    margin-left: 50px;
+    display: flex;
+    flex-direction: column;
+}
+
+.header-content h1 {
+    font-size: 45px;
+}
+
+
+.header-content h2 {
+    margin-left: 3px;
+    font-size: 25px;
+}
+
+@media (max-width: 901px) {
+    .mainImg{
+        display: none;
+    }
+    .header {
+        padding-left: 0px;
+        padding-right: 0px;
+        justify-content: center;
+        height: 40%;
+    }
+    .header-content {
+        justify-content: center;
+        margin-left: 0px;
+    }
+
+    .header-content h1 {
+    font-size: 35px;
+    }
+
+
+    .header-content h2 {
+        margin-left: 2px;
+        font-size: 25px;
+    }
+}
+
+.cursor {
+    display: inline-block;
+    width: 3px;
+    background-color: black;
+    animation: blink 1.2s infinite;
+}
+
+.typed {
+    margin-right: 0.2em;
+}
+
+@keyframes blink {
+    0% {background-color: black;}
+    49.9% {background-color: black;}
+    50% {background-color: transparent;}
+    99.9% {background-color: transparent;}
+    100% {background-color: black;}
+}
