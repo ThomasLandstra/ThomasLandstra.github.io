@@ -38,7 +38,10 @@ function type() {
 
 function erase() {
     if (charIndex > 0) {
-        if (!cursorSpan.classList.contains("typing")) cursorSpan.classList.add("typing");
+        if (!cursorSpan.classList.contains("typing")) {
+            typedTextSpan.classList.remove("typed");
+            cursorSpan.classList.add("typing");
+        }
         typedTextSpan.textContent = textArray[textArrayIndex].substring(0, charIndex - 1);
         charIndex--;
         setTimeout(erase, Math.floor(Math.random() * 51) + 75); // Before deleting next character
