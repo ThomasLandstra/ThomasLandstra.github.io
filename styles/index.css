@@ -1,8 +1,21 @@
+/* Body */
 body{
     font-family: tahoma;
     text-align: justify;
     overflow-x: hidden;
 }
+
+::selection {
+    color: #FFD535;
+    background: #292929;
+}
+
+::-moz-selection {
+    color: #FFD535;
+    background: #292929;
+}
+
+/* Navbar */
 
 .navbar-text a {
     text-decoration: none;
@@ -14,11 +27,13 @@ body{
 }
 
 .bi:hover {
-    fill: rgb(109, 109, 109);
+    fill: #dab72d;
 }
 
+/* Header */
+
 .header {
-    background-color: rgb(50, 50, 50);
+    background-color: #292929;
     display: flex;
     flex-direction: row;
     max-height: 55%;
@@ -27,7 +42,17 @@ body{
     padding-bottom: 5%;
     padding-left: 5%;
     padding-right: 5%;
-    color: white;
+    color: #FFD535;
+}
+
+.header ::selection {
+    color: #292929;
+    background: white;
+}
+
+.header ::-moz-selection {
+    color: #292929;
+    background: white;
 }
 
 .mainImg {
@@ -88,7 +113,6 @@ body{
 .cursor {
     display: inline-block;
     width: 3px;
-    background-color: white;
     animation: blink 1.2s infinite;
 }
 
@@ -101,22 +125,34 @@ body{
 }
 
 @keyframes blink {
-    0% {background-color: white;}
-    49.9% {background-color: white;}
+    0% {background-color: #FFD535;}
+    49.9% {background-color: #FFD535;}
     50% {background-color: transparent;}
     99.9% {background-color: transparent;}
-    100% {background-color: white;}
+    100% {background-color: #FFD535;}
 }
+
+/* About Me */
 
 .aboutme {
-    width: 80%;
-    margin: 10%;
-    margin-top: 5%;
-    margin-bottom: 5%;
+    width: 100%;
+    padding: 10%;
+    padding-top: 5%;
+    padding-bottom: 5%;
     display: flex;
     flex-direction: column;
+    color: #292929;
 }
 
+.aboutme ::selection {
+    color: #FFD535;
+    background: #292929;
+}
+
+.aboutme ::-moz-selection {
+    color: #FFD535;
+    background: #292929;
+}
 
 #hide {
     max-width: 80%;
@@ -138,8 +174,8 @@ body{
     .aboutme {
         width: 90%;
         flex-direction: column;
-        margin-right: 5%;
-        margin-left: 5%;
+        padding-right: 5%;
+        padding-left: 5%;
     }
 
     #hide {
@@ -147,5 +183,82 @@ body{
     }
     .github-stats{
         display: none;
+    }
+}
+
+/* Portfolio */
+
+.portfolio {
+    background-color: #FFD535;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10%;
+    padding-bottom: 3%;
+    padding-top: 3%;
+    width: 100%;
+}
+
+.portfolio ::selection {
+    color: white;
+    background: #292929;
+}
+
+.portfolio ::-moz-selection {
+    color: white;
+    background: #292929;
+}
+
+.portfolio-cards {
+    display: flex;
+    width: 100%;
+}
+
+.portfolio-cards ::selection {
+    color: #292929;
+    background: white;
+}
+
+.portfolio-cards ::-moz-selection {
+    color: #292929;
+    background: white;
+}
+
+.portfolio-card {
+    display: flex;
+    flex-direction: column;
+    min-height: 30vw;
+    width: 30%;
+    background-color: #292929;
+    color: white;
+    margin-left: 1.6667%;
+    margin-right: 1.6667%;
+    margin-bottom: 3%;
+    border-radius: 16px;
+}
+
+.portfolio-card h3 {
+    height: 20%;
+    position: relative;
+    text-align: left;
+    margin-left: 1rem;
+    padding-top: 10px;
+}
+
+.portfolio-card p {
+    text-align: center;
+    margin-top: 80%;
+    padding-left: 5%;
+    padding-right: 5%;
+}
+
+@media (max-width: 701px) {
+    .portfolio-cards {
+        flex-direction: column;
+    }
+
+    .portfolio-card {
+        width: 100%;
+        min-height: 45vw;
     }
 }
