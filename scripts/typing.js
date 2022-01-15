@@ -1,7 +1,7 @@
 const typedTextSpan = document.querySelector(".iam");
 const cursorSpan = document.querySelector(".cursor");
 
-const textArray = shuffleArray(["Python", "Game", "Software", "Web", "GD Scirpt", "Lua", "Godot"]);
+const textArray = shuffleArray(["Python", "Game", "Software", "Web", "GD Scirpt", "Lua", "Godot", "Flask"]);
 const typingDelay = 100;
 const erasingDelay = 100;
 let textArrayIndex = 0;
