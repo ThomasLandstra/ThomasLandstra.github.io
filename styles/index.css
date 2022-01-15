@@ -57,6 +57,25 @@ body {
   animation-delay: 0.3s;
 }
 
+::-webkit-scrollbar {
+  width: 0.75em;
+  background-color: #ebebeb;
+}
+
+::-webkit-scrollbar-track {
+  background: #292929;
+  margin-block-start: calc(1.625rem + 35.5px);
+}
+
+::-webkit-scrollbar-thumb {
+  border-radius: 50vw;
+  background: #858585;
+  width: 0.5em;
+}
+
+::-webkit-scrollbar-thumb:hover {
+}
+
 /* Navbar */
 
 .navbar-text a {
