@@ -58,22 +58,23 @@ body {
 }
 
 ::-webkit-scrollbar {
-  width: 0.75em;
+  width: 0.75rem;
   background-color: #ebebeb;
 }
 
 ::-webkit-scrollbar-track {
-  background: #292929;
+  background-color: #292929;
   margin-block-start: calc(1.625rem + 35.5px);
 }
 
 ::-webkit-scrollbar-thumb {
   border-radius: 50vw;
-  background: #858585;
-  width: 0.5em;
+  background-color: #858585;
+  width: 0.5rem;
 }
 
 ::-webkit-scrollbar-thumb:hover {
+  background-color: #7d7d7d;
 }
 
 /* Navbar */
@@ -84,7 +85,7 @@ body {
 }
 
 .bi {
-  transition: fill 0.2s;
+  transition: fill 0.15s ease-in-out;
 }
 
 .bi:hover {
