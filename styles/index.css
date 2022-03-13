@@ -264,6 +264,16 @@ body {
   padding: 1.5em 5vw 1em 5vw;
 }
 
+.footer ::selection {
+  color: #292929;
+  background: white;
+}
+
+.footer ::-moz-selection {
+  color: #292929;
+  background: white;
+}
+
 .footer-upper {
   display: flex;
   justify-content: space-evenly;
