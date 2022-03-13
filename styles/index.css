@@ -58,7 +58,7 @@ body {
 }
 
 ::-webkit-scrollbar {
-  width: 0.75rem;
+  width: 0.75em;
   background-color: #ebebeb;
 }
 
@@ -70,7 +70,7 @@ body {
 ::-webkit-scrollbar-thumb {
   border-radius: 50vw;
   background-color: #858585;
-  width: 0.5rem;
+  width: 0.5em;
 }
 
 ::-webkit-scrollbar-thumb:hover {
@@ -225,8 +225,8 @@ body {
 #hide {
   max-width: 80%;
   align-self: center;
-  padding-top: 1rem;
-  padding-bottom: 1rem;
+  padding-top: 1em;
+  padding-bottom: 1em;
 }
 
 .github-stats {
