@@ -206,9 +206,7 @@ body {
 
 .aboutme {
   width: 100%;
-  padding: 10%;
-  padding-top: 5%;
-  padding-bottom: 5%;
+  padding: 5vh 10vw 5vh 10vw;
   display: flex;
   flex-direction: column;
   color: #292929;
@@ -232,27 +230,42 @@ body {
 }
 
 .github-stats {
+  padding-top: 1em;
   width: 100%;
   display: flex;
+  justify-content: space-evenly;
 }
 
 .github-stats img {
   width: 50%;
 }
 
-@media (max-width: 901px) {
-  .aboutme {
-    width: 90%;
-    flex-direction: column;
-    padding-right: 5%;
-    padding-left: 5%;
-  }
+#img-overide {
+  width: 49.6%;
+}
 
+@media (max-width: 901px) {
   #hide {
     display: none;
   }
   .github-stats {
-    display: none;
+    flex-direction: column;
+    align-items: center;
+  }
+  .github-stats img {
+    width: 75%;
+  }
+  #img-overide {
+    width: 74.8%;
+  }
+}
+
+@media (max-width: 601px) {
+  .github-stats img {
+    width: 100%;
+  }
+  #img-overide {
+    width: 100%;
   }
 }
 
