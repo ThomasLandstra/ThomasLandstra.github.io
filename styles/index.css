@@ -11,11 +11,6 @@ body {
   background: #292929;
 }
 
-::-moz-selection {
-  color: #ffd535;
-  background: #292929;
-}
-
 @keyframes fadeinall {
   0% {
     opacity: 1;
@@ -108,11 +103,6 @@ body {
 }
 
 .header ::selection {
-  color: #292929;
-  background: white;
-}
-
-.header ::-moz-selection {
   color: #292929;
   background: white;
 }
@@ -217,11 +207,6 @@ body {
   background: #292929;
 }
 
-.aboutme ::-moz-selection {
-  color: #ffd535;
-  background: #292929;
-}
-
 #hide {
   max-width: 80%;
   align-self: center;
@@ -278,11 +263,6 @@ body {
 }
 
 .footer ::selection {
-  color: #292929;
-  background: white;
-}
-
-.footer ::-moz-selection {
   color: #292929;
   background: white;
 }
