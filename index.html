@@ -56,12 +56,13 @@
       style="background-color: #ebebeb"
     >
       <div class="container-lg" style="padding-right: 0">
-        <a class="navbar-brand" href="#">
+        <a class="navbar-brand" href="/">
           <img
             src="./images/favicon.png"
             style="border-radius: 100%"
             width="35"
             height="35"
+            alt="profile pic small"
           />
         </a>
         <button
@@ -76,16 +77,12 @@
           <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
-          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-            <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="index.html"
-                >Home</a
-              >
-            </li>
-            <li class="nav-item">
-              <a class="nav-link disabled">Contact</a>
-            </li>
-            <li class="nav-item dropdown">
+          <div class="navbar-nav me-auto mb-2 mb-lg-0">
+            <a class="nav-link active" aria-current="page" href="index.html"
+              >Home</a
+            >
+            <a class="nav-link disabled">Contact</a>
+            <div class="nav-item dropdown">
               <a
                 class="nav-link dropdown-toggle"
                 href="#"
@@ -95,22 +92,14 @@
                 aria-expanded="false"
                 >Portfolio</a
               >
-              <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                <li>
-                  <a class="dropdown-item disabled" href="#">Recommended</a>
-                </li>
-                <li>
-                  <hr class="dropdown-divider" />
-                </li>
-                <li><a class="dropdown-item disabled" href="#">Python</a></li>
-                <li>
-                  <a class="dropdown-item disabled" href="#"
-                    >Game Development</a
-                  >
-                </li>
-              </ul>
-            </li>
-          </ul>
+              <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <a class="dropdown-item disabled" href="#">Recommended</a>
+                <hr class="dropdown-divider" />
+                <a class="dropdown-item disabled" href="#">Python</a>
+                <a class="dropdown-item disabled" href="#">Game Development</a>
+              </div>
+            </div>
+          </div>
           <hr class="dropdown-divider" />
           <span class="navbar-text">
             <a
@@ -156,6 +145,7 @@
         src="./images/self.png"
         style="border-radius: 100%"
         class="mainImg"
+        alt="profile pic"
       />
       <div class="header-content">
         <h1>Thomas Landstra</h1>
@@ -175,6 +165,7 @@
           width="25px"
           height="25px"
           style="max-width: 100%"
+          alt="wave"
         />
         my name is Thomas, I'm 15 years old and I program as a hobby. My
         favourite programming language is Python and I love creating strange
@@ -354,14 +345,17 @@
       <img
         src="https://github-profile-trophy-ten.vercel.app/?username=thomaslandstra&amp;theme=great-gatsby"
         id="hide"
+        alt="GitHub Trophies"
       />
       <div class="github-stats">
         <img
           src="https://github-readme-stats-nine-bay.vercel.app/api?username=ThomasLandstra&amp;show_icons=true&amp;theme=great-gatsby"
+          alt="GitHub Stats"
         />
         <img
           src="https://undercover-readme-streak-stats.herokuapp.com/?user=thomaslandstra&amp;theme=great-gatsby"
           id="img-overide"
+          alt="GitHub Stats"
         />
       </div>
     </section>
@@ -400,17 +394,15 @@
           </ul>
         </div>
       </div>
-      <div class="footer-lower">
-        <small
-          >COPYRIGHT © 2022 Thomas Landstra,
-          <a
-            href="https://github.com/ThomasLandstra/ThomasLandstra.github.io/blob/main/LICENCE"
-            target="_blank"
-            rel="noopener noreferrer nofollow"
-            >MIT Licence</a
-          ></small
-        >
-      </div>
+      <small class="footer-lower"
+        >COPYRIGHT © 2022 Thomas Landstra,
+        <a
+          href="https://github.com/ThomasLandstra/ThomasLandstra.github.io/blob/main/LICENCE"
+          target="_blank"
+          rel="noopener noreferrer nofollow"
+          >MIT Licence</a
+        ></small
+      >
     </footer>
   </body>
 </html>
